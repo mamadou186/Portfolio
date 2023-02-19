@@ -1,0 +1,297 @@
+/* TITRE */
+.contain {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#5F99FF;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#29D200;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+/* TITRE */
+
+/* CORPS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body   { font-family: 'Mukta', sans-serif;
+color: #5F99FF;
+background-color:#444444;
+}
+
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+
+@media screen and (max-height:700px){ 
+.tete h1{
+	font-size:350%;
+}
+
+.tete {
+	background-color:#444444;
+	font-size:135%;
+	text-align:center;
+	height:100vh;
+	overflow:auto;
+}
+}
+
+@media screen and (min-height:700px){ 
+.tete h1{
+	font-size:350%;
+}
+
+.tete {
+	background-color:#444444;
+	font-size:185%;
+	text-align:center;
+	height:100vh;
+	overflow:auto;
+}
+}
+
+/* CORPS */
+
+/* DIV PRINCIPALES */
+
+.experience {
+	background-color:#181818;
+	color:white;
+	font-size:30px;
+	text-align:center;
+}
+
+.projets {
+	background-color:#444444;
+	color:#5F99FF;
+	font-size:30px;
+	text-align:center;
+}
+
+.cv {
+	margin-top:50px;
+	background-color:#181818;
+	color:white;
+	font-size:30px;
+	text-align:center;
+}
+
+.plus {
+	background-color:#444444;
+	color:#5F99FF;
+	font-size:30px;
+	text-align:center;
+}
+
+/* DIV PRINCIPALES */
+
+/* FOOTER */
+
+footer {background-color: #6A6A6A ;
+color:white;
+font-family: Arial, sans-serif;
+margin-top:50px;
+text-align:center;
+}
+
+/* FOOTER */
+
+
+/* BARRE NAV */
+
+nav{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    position: sticky;
+    top: 0px;
+	font-family: Avenir, sans-serif;
+	background-color: #000000 ;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+	transition : all 0.3s
+}
+
+nav a:hover{
+    color: #5F99FF;
+    border-bottom: 2px solid #5F99FF;
+}
+
+/* BARRE NAV */
+
+
+/* BARRE PROGRES */
+.container{
+	text-align:left;
+}
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 80%;
+  transition: all 1s;
+
+}
+
+.progressbar {
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.progressbar-wrapper:hover{
+	width:90%;
+}	
+  
+.python {
+  width: 75%;
+  background-color:#483CFF
+}
+
+.c {
+  width: 60%;
+  background-color:#968FFF;
+}
+
+.sql {
+  width: 65%;
+  background-color:#FA8727;
+}
+
+.html {
+  width: 55%;
+  background-color:#FA6427;
+}
+.java {
+  width: 45%;
+  background-color:#DA3800;
+}
+
+/* BARRE PROGRES */
+	
+/* DIV PROJETS */
+
+@media screen and (min-width:850px){   /* les div contenant les lieux et les images */
+	.proj {border: 2px solid #5F99FF;
+	color:#5F99FF;
+	background-color: #181818  ;
+	width : 80%;
+	line-height:50px;
+	margin:auto;
+	text-align:center;
+	margin-top: 100px;
+	float:center;
+	overflow:auto;
+	border-radius: 5px;
+	}
+
+	.proj img{
+		width:100%;
+		height:50vh;
+		object-fit:cover;
+	}
+}
+
+@media screen and (max-width:850px){
+	.proj {border: 2px solid #5F99FF;
+	color:#5F99FF;
+	background-color: #181818  ;
+	width : 80%;
+	line-height:50px;
+	margin:auto;
+	text-align:center;
+	margin-top: 100px;
+	float:center;
+	overflow:auto;
+	border-radius: 5px;
+	}
+
+	.proj img{
+		width:100%;
+		height:50vh;
+		object-fit:cover;
+	}
+}
+
+/* DIV PROJETS */
+
+/* CV */
+
+.cv img{
+	width:80%;
+	float:center;
+}
+/* CV */
+
+/* ICONES */
+.plus img{
+	width:10%;
+}
+/* ICONES */
