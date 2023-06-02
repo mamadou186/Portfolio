@@ -1,0 +1,82 @@
+/* CORPS */
+body   { font-family: 'Mukta', sans-serif;
+color: #5F99FF;
+background-color:#444444;
+margin:0px;
+padding:0px;
+}
+/* CORPS */
+
+/* IMAGE DE GARDE */
+.bloc img{    /* permet d'afficher l'image du titre */
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+	
+}
+
+.bloc::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background-color: #000000a8;
+}
+
+.bloc {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 100px;
+}
+
+.bloc h1{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 17%;
+    font-size: 75px;
+}
+/* IMAGE DE GARDE */
+
+.info {border: 2px solid black;
+	font-size:130%;
+	color:#5F99FF;
+	background-color: #181818  ;
+	max-width : 70%;
+	line-height:50px;
+	margin:auto;
+	text-align:center;
+	transition:all 0.5s;
+	margin-top: 100px;
+	float:center;
+	overflow:auto;
+	border-radius: 5px;
+	margin-bottom:100px;
+}
+
+
+.bloc2 img{    /* permet d'afficher l'image du titre */
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	
+}
+
+
+.bloc2 {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 100px;
+}

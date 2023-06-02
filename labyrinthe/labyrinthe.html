@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Labyrinthe C</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="../projet.css">
+</head>
+
+<body>
+	<div class="bloc">
+        <img src='garde.png' alt ="garde">
+        <h1>Le labyrinthe en langage C</h1>
+    </div>
+	
+	<div class = "info">
+	<h1>Description du projet</h1>
+	<p>Ce projet a été réalisé en binôme. Afin de générer des labyrinthes , nous nous sommes inspirer de l’algorithme de la fusion aléatoire des chemins
+qui permet de générer un labyrinthe parfait. L’algorithme associe une valeur unique à chaque cellule et part d’un labyrinthe
+où tous les murs sont fermés. À chaque itération, on choisit un mur à ouvrir de manière aléatoire.
+Lorsqu’un mur est ouvert entre deux cellules adjacentes, les deux cellules sont liées entre elles et forment un chemin.
+À chaque fois que l’on tente d’ouvrir un mur entre deux cellules, on vérifie que ces deux cellules ont des valeurs différentes.
+Si les valeurs sont identiques, c’est que les deux cellules sont déjà reliées et appartiennent donc au même chemin.
+Si les valeurs sont différentes, le mur est ouvert, et la valeur de la première cellule est affecté à toutes les cellules du second
+chemin. On effectue un grand nombre de fois ces tests jusuq’à ce qu’il n’y ait plus qu’une seule valeur.</p>
+	</div>
+	
+	<div class="bloc2">
+        <img src='image.png' alt ="image">
+    </div>
+	
+	<div class = "info">
+	<h1>Bibliothèques utilisées:</h1>
+<p>•time : On a utilisé cette bibliothèque afin d’utiliser la fonction
+rand() qui génère des nombres aléatoires.</p>
+<p>•Stdlib : Nous avons eu recours a cette bibliothèque afin de
+pouvoir déclarer des fonctions permettant de traiter
+l’allocation-mémoire, la conversion de chaînes de caractères
+en types numériques (int, long, double) et les tirages aléatoires
+afin de générer aléatoirement des labyrinthes.</p>
+<p>•stdio.h : Cette bibliothèque contient la manipulation des flux de
+caractères. Cette bibliothèque nous a aussi fourni un ensemble de
+fonctions utiles à la création du labyrinthe</p>
+	</div>
+	
+	<center>
+	<button onclick="window.location.href = '../portfolio.html#projets';">Revenir</button>
+	</center><br><br>
+</body>
+</html>
