@@ -59,6 +59,8 @@ html {
 body   { font-family: 'Mukta', sans-serif;
 color: #5F99FF;
 background-color:#444444;
+margin:0px;
+padding:0px;
 }
 
 p {
@@ -298,7 +300,7 @@ nav a:hover{
 /* ICONES */
 
 
-/* Timeline Container */
+/* TIMELINE */
 .timeline {
   background: var(--primary-color);
   margin: 20px auto;
@@ -411,3 +413,4 @@ nav a:hover{
 .card:nth-child(even) > .info > .title::before {
   right: -45px;
 }
+/* TIMELINE */
