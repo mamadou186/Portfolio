@@ -8,14 +8,19 @@
 </HEAD>
 <body>
 	<nav>
-	  <ul>
-		<li><a href="#tete">Accueil</a></li>
-		<li><a href="#experience">Expériences</a></li>
-		<li><a href="#projets">Projets</a></li>
-		<li><a href="#cv">Mon CV</a></li>
-		<li><a href="#plus">Plus</a></li>
-	  </ul>
-	</nav>
+        <div class="container">
+            <div class="logo">
+                <h2>MAMADOU BA</h2>
+            </div>
+            <ul>
+                <li><a href="#tete">Accueil</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#cv">Mon CV</a></li>
+                <li><a href="#plus">Plus</a></li>
+            </ul>
+        </div>
+    </nav>
 
 	
 	<div class = "tete" id = "tete">
@@ -37,7 +42,7 @@
 	
 	<div class="experience" id = "experience">
 	<br>
-	<h1>Expériences / Compétences</h1>
+	<h1>Expériences</h1>
 	<br>
 	
 	J'ai appris la programmation au cours de mes années lycées
@@ -68,93 +73,111 @@
   </div>
 </div>
 </center>
-	<div class="container">
-		 <p style="color:#483CFF">Python</p>
-		 <div class="progressbar-wrapper">
-		  <div class="progressbar python">75%</div>
-		 </div>
-		 
-		 <p style="color:#FA8727">SQL / PHP</p>
-		 <div class="progressbar-wrapper">
-		  <div class="progressbar sql">70%</div>
-		 </div>
-
-		 <p style="color:#968FFF">C</p>
-		 <div class="progressbar-wrapper">
-		  <div class="progressbar c">65%</div>
-		 </div>
-		 
-		 <p style="color:#FA6427">HTML / CSS </p>
-		 <div class="progressbar-wrapper">
-		  <div class="progressbar html">65%</div>
-		 </div>
-		 <p style="color:#DA3800">Java</p>
-		 <div class="progressbar-wrapper">
-		  <div class="progressbar java">55%</div>
-		 </div>
-	</div>
+<br>
+	<h1>Compétences Informatiques</h1>
+	<br>
+	<section class="gallery">
+        <figure>
+            <img src="images/python.png" alt="Python">
+            <figcaption>Python</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sql.png" alt="SQL">
+            <figcaption>SQL</figcaption>
+        </figure>
+        <figure>
+            <img src="images/php.png" alt="PHP">
+            <figcaption>PHP</figcaption>
+        </figure>
+        <figure>
+            <img src="images/c.png" alt="C">
+            <figcaption>C</figcaption>
+        </figure>
+        <figure>
+            <img src="images/html.png" alt="HTML">
+            <figcaption>HTML</figcaption>
+        </figure>
+        <figure>
+            <img src="images/css.png" alt="CSS">
+            <figcaption>CSS</figcaption>
+        </figure>
+        <figure>
+            <img src="images/java.png" alt="JAVA">
+            <figcaption>JAVA</figcaption>
+        </figure>
+    </section>
 	</div>
 	
 	<div class = "projets" div id = "projets">
 	<br>
 	<h1> Mes projets </h1>
 	
-	<div class = "proj">
-	<img src = "images/projet1.png" alt "Projet 1">
-	<p>2021</p>
-	<p>Réalisation d'un labyrinthe généré aléatoirement et de sa résolution en langage C</p>
-	<button onclick="window.location.href = 'labyrinthe/labyrinthe.html';">En savoir plus</button>
+
+	<section class="projects">
+        <div class="project">
+            <img src="images/projet1.png" alt="Projet 1">
+            <h2>2021</h2>
+            <p>Réalisation d'un labyrinthe généré aléatoirement et de sa résolution en langage C</p>
+            <a href="labyrinthe/labyrinthe.html" class="button">En savoir plus</a>
+        </div>
+
+        <div class="project">
+            <img src="images/projet2.jpg" alt="Projet 2">o
+            <h2>2022 / 2023</h2>
+            <p>Réalisation d'une base de donnée d'un hôpital ralliée à un site web en HTML / CSS / PHP dans le cadre d'un projet d'étude</p>
+            <a href="hopital/hopital.html" class="button">En savoir plus</a>
+        </div>
+
+        <div class="project">
+            <img src="images/projet3.jpg" alt="Projet 3">
+            <h2>2022</h2>
+            <p>Réalisation d'un jeu de territoire avec des boules de couleur en python à l'aide d'une bibilothèque locale</p>
+            <a href="python/python.html" class="button">En savoir plus</a>
+        </div>
+
+        <div class="project">
+            <img src="images/projet4.png" alt="Projet 4">
+            <h2>2023</h2>
+            <p>Réalisation d'un jeu en Java en utilisant une bibliothèque graphique locale </p>
+            <a href="java/java.html" class="button">En savoir plus</a>
+        </div>
+
+    </section>
+	
 	</div>
 	
-	<div class = "proj">
-	<img src = "images/projet2.jpg" alt "Projet 2">
-	<p>2022 / 2023</p>
-	<p>Réalisation d'une base de donnée d'un hôpital ralliée à un site web en HTML / CSS / PHP dans le cadre d'un projet d'étude</p>
-	<button onclick="window.location.href = 'hopital/hopital.html';">En savoir plus</button>
-	</div>
+	<div class="cv" id="cv">
+    <h1>Mon CV</h1>
+    <div class="cv-content">
+        <img src="images/cv.jpg" alt="CV">
+        <br>
+        <a href="images/CV.pdf" download="CV.pdf">Télécharger le CV</a>
+    </div>
+  </div>
+
 	
-	<div class = "proj">
-	<img src = "images/projet3.jpg" alt "Projet 3">
-	<p>2022</p>
-	<p>Réalisation d'un jeu de territoire avec des boules de couleur en python à l'aide d'une bibilothèque locale</p>
-	<button onclick="window.location.href = 'python/python.html';">En savoir plus</button>
-	</div>
-	
-	<div class = "proj">
-	<img src = "images/projet4.png" alt "Projet 4">
-	<p>2023</p>
-	<p>Réalisation d'un jeu en Java en utilisant une bibliothèque graphique locale </p>
-	<button onclick="window.location.href = 'java/java.html';">En savoir plus</button>
-	</div>
-	<br>
-	
-	</div>
-	
-	<div class = "cv" div id = "cv">
-	<br>
-	<h1> Mon CV </h1>
-	<img src = "images/cv.jpg" alt "CV">
-	<br>
-	<a href="images/CV_BA_Mamadou.pdf" download="CV_BA_Mamadou.pdf">Télécharger le CV</a>
-	</div>
-	
-	<div class = "plus" div id = "plus">
-	<br>
-	<h1> Plus </h1>
-	<p>Où me trouver</p>
-	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.100534987835!2d2.583081314889556!3d48.8372210101523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1672057414408!5m2!1sfr!2sfr" 
-	width="80%" height="500vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
-	<p>M'envoyer un mail</p>
-	<a  href="mailto:mamadou0877@gmail.com"><img src = "images/gmail.png" alt "logo gmail"></a>
-	<p>M'appeler</p>
-	<a href = "tel:0782848080"><img src = "images/telephone.png" alt "icon telephone"></a>
-	<p>Réseaux sociaux</p>
-	<a href = "https://www.linkedin.com/in/mamadou-ba-4b2031267/"><img src = "images/in.png" alt "logo linkedin"></a>
+	<div class="plus" id="plus">
+    <br>
+    <h1>Plus</h1>
+    <div class="contact-info">
+        <div class="contact-item">
+            <p><strong>Adresse:</strong><br> IUT de Marne-la-Vallée - Université Gustave Eiffel</p>
+            <p><strong>Email:</strong><br> mamadou0877@gmail.com</p>
+            <p><strong>Téléphone:</strong><br> 0782848080</p>
+            <p><strong>LinkedIn:</strong><br> <a href="https://www.linkedin.com/in/mamadou-ba-4b2031267/">linkedin.com/in/mamadou-ba-4b2031267</a></p>
+        </div>
+        <div class="contact-item">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.100534987835!2d2.583081314889556!3d48.8372210101523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1672057414408!5m2!1sfr!2sfr" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
 </body>
 <footer>
-<br>
-<a style = "font-size:1.5vw;">2023 Mamadou BA - Tous droits réservés</a>
-<br>
-<a style = "font-size:1.5vw;" href = "legale.html">Mentions légales</a>
-<br>
+    <div class="footer-content">
+        <p>&copy; 2023 Mamadou BA - Tous droits réservés</p>
+        <a href="legale.html">Mentions légales</a>
+    </div>
 </footer>
+
