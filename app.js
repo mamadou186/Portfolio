@@ -24,5 +24,13 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function toggleInfo(event, button) {
+  event.preventDefault(); // Empêche le comportement par défaut du lien
+  var project = button.parentNode;
+  var additionalInfo = project.querySelector('.additional-info');
+  additionalInfo.classList.toggle('show');
+  
+}
+
 
 

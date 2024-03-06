@@ -132,7 +132,7 @@ html {
 }
 
 body   { font-family: 'Mukta', sans-serif;
-color: #5F99FF;
+color: #ffffff;
 background-color:#444444;
 margin:0px;
 padding:0px;
@@ -199,9 +199,17 @@ padding:0px;
 
 .projets {
 	background-color:#444444;
-	color:#5F99FF;
+	color: #ffffff;
 	font-size:30px;
 	text-align:center;
+}
+
+.projets h1{
+    color: #5F99FF;
+}
+
+.projets h2{
+    color: #5F99FF;
 }
 
 .cv {
@@ -410,18 +418,22 @@ nav a:hover {
 /*COMPETENCE*/
 	
 /* DIV PROJETS */
-
-.projects {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-  flex-wrap: wrap; /* Permet aux projets de passer à la ligne si l'espace est insuffisant */
+.additional-info {
+  display: none;
+  margin-top: 10px;
+  transition: 0.2s; 
 }
 
+.additional-info.show {
+  display: block;
+  transition: 0.2s; 
+}
+
+@media screen and (min-width:700px){ 
 .project {
-  width: 300px;
-  margin: 10px;
-  margin-bottom: 150px;
+  width: calc(50% - 200px); /* Utilise la moitié de la largeur disponible en retirant les marges */
+  margin: 200px;
+  margin-bottom: 20px; /* Réduire la marge inférieure */
   padding: 20px;
   text-align: center;
   background-color: #fff;
@@ -430,9 +442,32 @@ nav a:hover {
   overflow: hidden; 
   transition: all 0.3s ease; 
 }
+}
+
+@media screen and (max-width:700px){ 
+  .project {
+    width: 300px;
+    margin: 10px;
+    margin-bottom: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: center; /* Centrer les projets horizontalement */
+  margin: 20px 0;
+  flex-wrap: wrap; /* Permet aux projets de passer à la ligne si l'espace est insuffisant */
+}
 
 .project:hover {
-  transform: scale(1.2); /* L'élément s'agrandira de 10% lorsqu'il sera survolé */
+  transform: scale(1.1); /* L'élément s'agrandira de 10% lorsqu'il sera survolé */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* L'ombre portée sera plus prononcée */
   transition: all 0.3s ease;
 }
@@ -459,13 +494,7 @@ nav a:hover {
   display: inline-block;
   padding: 10px 20px;
   background-color: #5F99FF;
-  color: #fff;/* CV */
-
-  .cv img{
-    width:80%;
-    float:center;
-  }
-  /* CV */
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -502,7 +531,7 @@ nav a:hover {
 	width:80%;
 	float:center;
 }
-/* CV */
+
 
 .cv a {
     display: block;

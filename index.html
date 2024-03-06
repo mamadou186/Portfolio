@@ -2,6 +2,7 @@
 <HTML>
 <HEAD>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <TITLE>Portfolio - Mamadou BA</TITLE>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Mukta:wght@200&display=swap" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="style.css"  type="text/css" />
@@ -17,7 +18,7 @@
             <ul>
                 <li><a href="#tete">Accueil</a></li>
                 <li><a href="#experience">Expérience</a></li>
-                <li><a href="#projets">Projets</a></li>
+                <li><a href="#projets">Compétences</a></li>
                 <li><a href="#cv">Mon CV</a></li>
                 <li><a href="#plus">Plus</a></li>
             </ul>
@@ -51,10 +52,10 @@
 	<h1>Expériences</h1>
 	<br>
 
-        J'ai acquis mes compétences en programmation tout au long de mes années scolaires, dès la première générale.
-        Depuis, j'ai exploré différents langages de programmation, me
-        permettant ainsi de sélectionner celui avec lequel je me sens le plus à l'aise. Cette diversité
-        de compétences me guide dans mon choix de carrière pour l'avenir.
+        J'ai acquis mes compétences en programmation tout au long de mes années scolaires.
+        Depuis, j'ai exploré différents langages de programmation.
+        Cette diversité m'a permis de développer une compréhension approfondie des concepts
+         fondamentaux de la programmation et de découvrir les forces et les faiblesses de chaque langage
 	<br>
     </div>
         <center>
@@ -67,7 +68,7 @@
                 </div>
                 <div class="card">
                     <div class="info">
-                        <h3 class="title">Licence 1 Mathématiques Informatque appliqué aux Sciences Humaines et Sociales</h3>
+                        <h3 class="title">Licence 1 Mathématiques Informatique appliqué aux Sciences Humaines et Sociales</h3>
                         Première année de licence MIASHS validée à l'université de Paris X Nanterre (Nanterre, 92000)
                     </div>
                 </div>
@@ -168,42 +169,209 @@
 	
 	<div class = "projets" div id = "projets">
 	<br>
-	<h1> Mes projets </h1>
-	
 
-	<section class="projects reveal">
-        <div class="project reveal">
-            <img src="images/projet1.png" alt="Projet 1">
-            <h2>2021</h2>
-            <p>Réalisation d'un labyrinthe généré aléatoirement et de sa résolution en langage C</p>
-            <a href="labyrinthe/labyrinthe.html" class="button">En savoir plus</a>
-        </div>
+	<h1> Mes Compétences </h1>
+        <h2>Réalisation</h2>
+
+        <i>"De la vision à la réalité : Ma compétence en réalisation consiste à transformer
+        les exigences en une application concrète. Avec une approche méthodique et créative,
+        je m'engage à concrétiser les idées en solutions tangibles, en naviguant habilement à
+            travers les défis pour aboutir à des résultats concrets et satisfaisants."</i>
+        <section class="projects reveal">
+
+            <div class="project reveal">
+                <img src="images/projet3.jpg" alt="Projet 3">
+                <h2>2022</h2>
+                <p>Réalisation d'un jeu de territoire avec des boules de couleur en python à l'aide d'une bibilothèque locale</p>
+                <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+                <div class="additional-info">
+                    <p>J'ai réalisé un jeu de territoire en Python qui se joue à deux joueurs avec une bibilothèque locale "Upemtk" qui est inspirée de 
+                        de "Tkinter"</p>
+                        <p>Description du jeu :</p>
+                        <p>  -Les zones intérieures de deux balles de couleurs différentes ne peuvent pas se chevaucher. Si un joueur tente d'ajouter une balle qui 
+                            chevauche l'intérieur d'une balle de couleur opposée, rien ne se passe et c'est le tour du joueur suivant.</p>
+                        <p>-Si un joueur clique à l'intérieur de la zone d'une balle appartenant à l'adversaire, il la divise en deux balles de couleur identique
+                        mais plus petites. Une des nouvelles balles a son centre à l'endroit où le joueur a cliqué et est tangente à la balle d'origine, tandis
+                        que l'autre est tangente à la balle d'origine et à la nouvelle balle créée.</p>
+                        <p>-A la fin du jeu, le joueur qui a le plus de couleur sur l'air de jeu remporte la partie.</p>
+                        <p>-Différents modes ont été implémenté tels qu'une intelligence artificielle simple ou une aire de jeu avec obstacle etc...</p>
+                </div>
+            </div>
+
+            <div class="project reveal">
+                <img src="images/projet4.png" alt="Projet 4">
+                <h2>2023</h2>
+                <p>Réalisation d'un jeu en Java en utilisant une bibliothèque graphique locale </p>
+                <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+                <div class="additional-info">
+                    <p>En binôme, nous avons réalisé le projet de développement du jeu "BackPack Hero" en utilisant la bibliothèque graphique 
+                        locale Zen5 et en structurant le code selon le modèle Modèle-Vue-Contrôleur (MVC).</p>
+                        <p>Description du jeu :</p>
+                        <p>"BackPack Hero" est une version simplifiée du jeu éponyme. Il s'agit d'un jeu solo où le joueur incarne un héros chargé 
+                        d'explorer un donjon rempli de monstres et de trésors. Pour avancer dans l'aventure, le héros doit se fier uniquement au matériel 
+                        qu'il transporte dans son sac à dos. Ce jeu appartient au genre "rogue-like", où l'exploration et la gestion des ressources sont au 
+                        cœur de l'expérience. L'un des aspects majeurs du gameplay réside dans le placement stratégique des tuiles, qui interagissent de manière 
+                        dynamique avec le joueur et l'environnement du jeu.</p>
+                </div>
+            </div>
+
+            <div class="project reveal">
+                <img src="images/projet5.png" alt="Projet 5">
+                <h2>2024</h2>
+                <p>Réalisation d'une interface web et application mobile contenant un jeu</p>
+                <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+                <div class="additional-info">
+                    <p>Ce projet a été réalisé en équipe en partant d'un cahier des charges. Il consiste à créer
+                    une application conviviale et responsive permettant de jouer à un jeu impliquant des chaînes de mot et leur similarité
+                        sémantique et orthographique, un peu comme le jeu Cémantix sur internet.</p>
+                        <p>Langages utilisés :</p>
+                        <p>-HTML : pour la structure et le contenu de l'interface web.</p>
+                        <p>-CSS : pour le style et la présentation de l'interface, assurant une esthétique agréable et une expérience utilisateur optimisée.</p>
+                        <p>-PHP : pour la logique côté serveur, la gestion des sessions, et l'interaction avec la base de données, si nécessaire.</p>
+                        <p>-JavaScript : pour la programmation côté client, l'interactivité de l'interface utilisateur, les fonctionnalités dynamiques.</p>
+                        <p>-Java : pour le développement de l'application mobile Android, en utilisant Android Studio comme environnement de développement intégré (IDE).
+                        ainsi que le développement du jeu principal.</p>
+                        <p>-C : pour le développement du jeu, en s'appuyant sur les fonctionnalités de base du langage C et en exploitant les bibliothèques appropriées pour la conception de jeux.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2>Optimisation</h2>
+
+        <i>"De la complexité à la clarté : Ma compétence en optimisation réside dans ma capacité à sélectionner
+            les algorithmes les plus adaptés pour résoudre un problème spécifique. En analysant rigoureusement
+            les défis, je choisis avec précision les outils algorithmiques les plus efficaces, garantissant ainsi
+            une optimisation maximale des processus et des performances."</i>
+            <section class="projects reveal">
+                <div class="project reveal">
+                    <img src="images/projet1.png" alt="Projet 1">
+                    <h2>2021</h2>
+                    <p>Réalisation d'un labyrinthe généré aléatoirement et de sa résolution, en utilisant l'algorithme le plus optimisé en langage C</p>
+                    <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+                    <div class="additional-info">
+                        <p>Ce projet a été réalisé en binôme. Pour créer des labyrinthes, nous nous sommes
+                            inspirés de l'algorithme de fusion aléatoire des chemins. Cet algorithme génère des labyrinthes parfaits en
+                            attribuant une valeur unique à chaque cellule et en partant d'un labyrinthe où tous les murs sont fermés.
+                            À chaque étape, nous sélectionnons un mur aléatoirement à ouvrir. Lorsqu'un mur est ouvert entre deux
+                            cellules voisines, ces cellules sont reliées entre elles pour former un chemin. Nous vérifions à chaque
+                            fois que les deux cellules sélectionnées ont des valeurs différentes ; si elles sont identiques, cela
+                            signifie qu'elles sont déjà reliées et appartiennent au même chemin. Si les valeurs sont différentes, nous
+                            ouvrons le mur et attribuons la valeur de la première cellule à toutes les cellules du deuxième chemin. Nous
+                            répétons ces étapes un grand nombre de fois jusqu'à ce qu'il ne reste qu'une seule valeur.</p>
+                        <p>Langage utilisé : C</p>
+                    </div>
+                </div>
+            </section>
+
+        <h2>Administration</h2>
+
+        <i>
+            "De la conception à la mise en œuvre : Ma compétence en administration se concentre sur le
+            déploiement de services dans une architecture réseau. Malgré quelques faiblesses dans ce domaine, je suis capable de
+            mettre en place des services essentiels dans un
+            environnement réseau, en garantissant leur fonctionnement stable et leur accessibilité optimale pour
+            répondre aux besoins spécifiques."</i>
+
+        <h2>Gestion</h2>
+
+        <i>"De l'organisation à la sécurité : Ma compétence en gestion s'articule autour de l'optimisation des bases de données,
+            de l'interaction avec les applications et de la mise en œuvre de mesures de sécurité. Grâce à une analyse
+            approfondie des données, je suis capable d'optimiser les performances de la base de données tout en
+            assurant une interactivité fluide avec les applications. De plus, je mets en place des protocoles de
+            sécurité robustes pour garantir la protection des données sensibles, assurant ainsi la fiabilité et la
+            confidentialité des systèmes que je gère."</i>
+
+        <section class="projects reveal">
 
         <div class="project reveal">
             <img src="images/projet2.jpg" alt="Projet 2">
             <h2>2022 / 2023</h2>
-            <p>Réalisation d'une base de donnée d'un hôpital ralliée à un site web en HTML / CSS / PHP dans le cadre d'un projet d'étude</p>
-            <a href="hopital/hopital.html" class="button">En savoir plus</a>
-        </div>
+            <p>Réalisation et gestion d'une base de donnée d'un hôpital ralliée à un site web en HTML / CSS / PHP</p>
+            <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+            <div class="additional-info">
+                <p>Caractéristiques du projet réalisé en binôme:</p>
 
-        <div class="project reveal">
-            <img src="images/projet3.jpg" alt="Projet 3">
-            <h2>2022</h2>
-            <p>Réalisation d'un jeu de territoire avec des boules de couleur en python à l'aide d'une bibilothèque locale</p>
-            <a href="python/python.html" class="button">En savoir plus</a>
-        </div>
+                <p>-Conception de la Base de Données :</p>
 
-        <div class="project reveal">
-            <img src="images/projet4.png" alt="Projet 4">
-            <h2>2023</h2>
-            <p>Réalisation d'un jeu en Java en utilisant une bibliothèque graphique locale </p>
-            <a href="java/java.html" class="button">En savoir plus</a>
-        </div>
+                <p>Création d'une base de données relationnelle pour stocker les informations essentielles relatives aux patients, aux médecins, au personnel médical, aux rendez-vous, aux traitements, etc.
+                Structuration des tables de la base de données de manière à garantir une organisation efficace et cohérente des données, tout en assurant leur intégrité et leur sécurité.</p>
+                <p>-Développement de l'Interface Web :</p>
 
-    </section>
-	
+                <p>Utilisation de HTML pour définir la structure et le contenu des pages web, en veillant à une présentation claire et intuitive des informations.</p>
+                <p>Utilisation de CSS pour styliser et mettre en forme les éléments de l'interface, en assurant une expérience utilisateur agréable et professionnelle.</p>
+                <p>Utilisation de PHP pour la programmation côté serveur, permettant de gérer les requêtes des utilisateurs, d'interagir avec la base de données et de générer des pages web dynamiques en fonction des données récupérées.</p>
+                <p>-Gestion des Profils :</p>
+
+                <p>Mise en place de différents profils d'utilisateur, tels que les patients, les médecins, le personnel administratif, etc.</p>
+                <p>Création de fonctionnalités spécifiques à chaque profil, permettant aux utilisateurs d'accéder aux informations pertinentes et d'effectuer les actions nécessaires en fonction de leurs responsabilités et autorisations.</p>
+                <p>-Sécurité des Données :</p>
+
+                <p>Implémentation de mesures de sécurité robustes pour protéger les données sensibles des patients et du personnel médical.</p>
+                <p>Utilisation de techniques de cryptage pour sécuriser les mots de passe des utilisateurs et prévenir les accès non autorisés.</p>
+                <p>Mise en place de contrôles d'accès et de permissions pour limiter l'accès aux données en fonction du profil de l'utilisateur et de ses privilèges.</p>
+            </div>
+        </div>
+        </section>
+
+        <h2>Conduite</h2>
+
+        <i>
+            "De la planification à la réalisation : Ma compétence en conduite réside dans ma capacité à
+            organiser et piloter des projets informatiques, seul ou en équipe, en utilisant à la fois des méthodes classiques
+            et agiles. Avec une approche flexible et adaptative, je veille veille à ce que les objectifs du projet soient atteints dans les délais
+            impartis. Que ce soit en suivant un processus rigoureux ou en s'adaptant aux changements avec
+            agilité, je suis en mesure de garantir la réussite et la satisfaction des parties prenantes tout
+            au long du cycle de vie du projet."</i>
+
+        <br>
+
+        <h2>Collaboration</h2>
+
+        <i>
+            "De l'alignement à la synergie : Ma compétence en collaboration consiste à situer mon rôle et
+            mes missions de manière précise au sein d'une équipe informatique. En comprenant clairement les
+            objectifs du projet et les compétences de chaque membre, je m'efforce d'optimiser la synergie
+            collective. Grâce à une communication ouverte et à une répartition efficace des tâches, je favorise
+            un environnement de travail harmonieux où chacun peut contribuer de manière significative à la
+            réussite de l'équipe."</i>
+
+        <section class="projects reveal">
+
+            <div class="project reveal">
+                <img src="images/projet6.png" alt="Projet 6">
+                <h2>2024</h2>
+                <p>Réalisation d'une interface de paiement d'une banque fictive en équipe en utilsant la méthode agile</p>
+                <a href="#" class="button" onclick="toggleInfo(event, this)">En savoir plus</a>
+                <div class="additional-info">
+                    <p>Caractéristiques du projet réalisé en équipe de 4:</p>
+
+                    <p>-Conception et Planification :</p>
+
+                    <p>L'équipe se réunit initialement pour définir les objectifs du projet, établir les spécifications de l'interface de paiement, et identifier les exigences fonctionnelles et non fonctionnelles.
+                        Une session de planification est organisée pour diviser le projet en tâches plus petites et définir les itérations ou "sprints" à suivre dans le cadre de la méthode agile.</p>
+                    <p>-Méthode Agile :</p>
+
+                    <p>L'équipe utilise une approche agile pour gérer le projet de manière itérative et incrémentale.</p>
+                    <p>Des réunions régulières sont organisées, comme les réunions de sprint, pour suivre les progrès, résoudre les problèmes rencontrés et ajuster les priorités si nécessaire.</p>
+                    <p>Les tâches sont attribuées à chaque membre de l'équipe en fonction de leurs compétences et de leurs domaines d'expertise, favorisant ainsi une répartition équilibrée du travail.</p>
+                    <p>-Développement de l'Interface :</p>
+
+                    <p>Le développement de l'interface de paiement est réalisé en utilisant les langages HTML, CSS et PHP pour créer une expérience utilisateur intuitive et conviviale.</p>
+                    <p>L'interface sera conçue pour permettre aux utilisateurs d'accéder facilement à leurs comptes, d'effectuer des transactions, de consulter l'historique des paiements, etc.</p>
+                    <p>-Gestion de la Base de Données :</p>
+
+                    <p>Une base de données SQL est mise en place pour stocker les informations des clients, des comptes bancaires, des transactions, etc.</p>
+                    <p>L'équipe utilise des bonnes pratiques de conception de base de données pour assurer la normalisation et l'intégrité des données, ainsi que pour optimiser les performances.</p>
+                    <p>-Tests et Déploiement :</p>
+
+                    <p>Des tests unitaires et des tests d'intégration sont effectués tout au long du processus de développement pour garantir la qualité du code et la fiabilité de l'interface.</p>
+                </div>
+            </div>
+
+        </section>
+
 	</div>
-	
+	<br><br><br>
 	<div class="cv reveal" id="cv">
         <h1>Mon CV</h1>
         <br>
